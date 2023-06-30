@@ -54,6 +54,9 @@ public class Main {
         // boolean isCodeUsed = virtualProductCodeManager.isCodeUsed("yyy") --> false;
         System.out.println("1. Create singleton class VirtualProductCodeManager \n");
         var isUsed = false;
+        VirtualProductCodeManager virtualProductCodeManager = VirtualProductCodeManager.getInstance();
+        virtualProductCodeManager.useCode("xxx");
+        isUsed = virtualProductCodeManager.isCodeUsed("xxx");
         System.out.println("Is code used: " + isUsed + "\n");
 
         //TODO 2). Create a functionality to get the most expensive ordered product
